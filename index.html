@@ -30,15 +30,16 @@
             overflow: hidden;
             border-right: 3px solid;
             width: 0;
-            animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+            animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
         }
         p {
             font-size: 1.8em;
             margin-top: 0;
         }
         @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+            0% { width: 0; }
+            50% { width: 100%; }
+            100% { width: 0; }
         }
         @keyframes blink {
             from, to { border-color: transparent; }
